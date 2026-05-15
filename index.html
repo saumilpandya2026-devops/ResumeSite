@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Saumil Pandya | DevOps Engineer</title>
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, Helvetica, sans-serif;
+    }
+
+    body{
+      height:100vh;
+      overflow:hidden;
+      color:white;
+      background:
+      linear-gradient(rgba(0,0,0,0.78), rgba(0,0,0,0.88)),
+      url("https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=2070&auto=format&fit=crop");
+
+      background-size:cover;
+      background-position:center;
+      background-repeat:no-repeat;
+    }
+
+    .overlay{
+      width:100%;
+      height:100vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      padding:20px;
+      backdrop-filter:blur(4px);
+    }
+
+    .card{
+      width:100%;
+      max-width:950px;
+      padding:60px;
+      border-radius:25px;
+      background:rgba(15,23,42,0.68);
+      border:1px solid rgba(255,255,255,0.1);
+      box-shadow:0 0 40px rgba(0,0,0,0.6);
+      text-align:center;
+      animation:fadeIn 1.2s ease;
+    }
+
+    @keyframes fadeIn{
+      from{
+        opacity:0;
+        transform:translateY(20px);
+      }
+      to{
+        opacity:1;
+        transform:translateY(0);
+      }
+    }
+
+    h1{
+      font-size:65px;
+      margin-bottom:15px;
+      color:#38bdf8;
+      text-shadow:0 0 15px rgba(56,189,248,0.6);
+    }
+
+    h2{
+      font-size:28px;
+      margin-bottom:25px;
+      color:#e2e8f0;
+      font-weight:400;
+    }
+
+    p{
+      color:#cbd5e1;
+      font-size:18px;
+      line-height:1.8;
+      margin-bottom:40px;
+    }
+
+    .skills{
+      display:flex;
+      justify-content:center;
+      flex-wrap:wrap;
+      gap:15px;
+      margin-bottom:45px;
+    }
+
+    .skill{
+      padding:12px 22px;
+      background:rgba(255,255,255,0.08);
+      border:1px solid rgba(255,255,255,0.08);
+      border-radius:30px;
+      transition:0.3s;
+      font-size:15px;
+      color:#e2e8f0;
+    }
+
+    .skill:hover{
+      transform:translateY(-5px);
+      background:#38bdf8;
+      color:black;
+      box-shadow:0 0 20px rgba(56,189,248,0.5);
+    }
+
+    .buttons{
+      display:flex;
+      justify-content:center;
+      gap:25px;
+      flex-wrap:wrap;
+    }
+
+    .btn{
+      text-decoration:none;
+      padding:16px 38px;
+      border-radius:12px;
+      font-size:18px;
+      font-weight:bold;
+      transition:0.3s;
+      letter-spacing:1px;
+    }
+
+    .resume{
+      background:#38bdf8;
+      color:black;
+      box-shadow:0 0 20px rgba(56,189,248,0.4);
+    }
+
+    .resume:hover{
+      background:white;
+      transform:translateY(-4px);
+    }
+
+    .projects{
+      background:#22c55e;
+      color:white;
+      box-shadow:0 0 20px rgba(34,197,94,0.4);
+    }
+
+    .projects:hover{
+      background:#16a34a;
+      transform:translateY(-4px);
+    }
+
+    .notes-main{
+      background:#a855f7;
+      color:white;
+      box-shadow:0 0 20px rgba(168,85,247,0.4);
+    }
+
+    .notes-main:hover{
+      background:#9333ea;
+      transform:translateY(-4px);
+    }
+
+    .floating-notes{
+      position:fixed;
+      right:20px;
+      bottom:20px;
+      background:#a855f7;
+      color:white;
+      text-decoration:none;
+      padding:10px 18px;
+      border-radius:50px;
+      font-size:14px;
+      font-weight:bold;
+      box-shadow:0 0 15px rgba(168,85,247,0.5);
+      transition:0.3s;
+      z-index:999;
+    }
+
+    .floating-notes:hover{
+      background:#9333ea;
+      transform:scale(1.08);
+    }
+
+    footer{
+      position:absolute;
+      bottom:15px;
+      width:100%;
+      text-align:center;
+      color:#94a3b8;
+      font-size:14px;
+    }
+
+    @media(max-width:768px){
+
+      body{
+        overflow:auto;
+      }
+
+      .card{
+        padding:35px 25px;
+      }
+
+      h1{
+        font-size:42px;
+      }
+
+      h2{
+        font-size:22px;
+      }
+
+      p{
+        font-size:16px;
+      }
+
+      .btn{
+        width:100%;
+      }
+
+    }
+
+  </style>
+</head>
+
+<body>
+
+<div class="overlay">
+
+  <div class="card">
+
+    <h1>Saumil Pandya</h1>
+
+    <h2>DevOps Engineer | Cloud & Automation Enthusiast</h2>
+
+    <p>
+      Building scalable cloud infrastructure, automated CI/CD pipelines,
+      containerized applications, Kubernetes clusters,
+      monitoring systems, and secure Linux environments.
+      Passionate about AWS, DevOps, Linux, Kubernetes,
+      Terraform, Docker, and Infrastructure Automation.
+    </p>
+
+    <div class="skills">
+      <div class="skill">Linux</div>
+      <div class="skill">AWS</div>
+      <div class="skill">Docker</div>
+      <div class="skill">Kubernetes</div>
+      <div class="skill">Terraform</div>
+      <div class="skill">Jenkins</div>
+      <div class="skill">GitHub Actions</div>
+      <div class="skill">Prometheus</div>
+      <div class="skill">Grafana</div>
+      <div class="skill">CI/CD</div>
+    </div>
+
+    <div class="buttons">
+
+      <a class="btn resume"
+         href="https://saumilpandya.space/Saumil_Pandya_Devops_2026.pdf"
+         target="_blank">
+         View Resume
+      </a>
+
+      <a class="btn projects"
+         href="https://saumilpandya.space/projects/"
+         target="_blank">
+         Projects
+      </a>
+
+      <a class="btn notes-main"
+         href="https://saumilpandya.space/notes/"
+         target="_blank">
+         DevOps Notes
+      </a>
+
+    </div>
+
+  </div>
+
+</div>
+
+<a class="floating-notes"
+   href="https://saumilpandya.space/notes/"
+   target="_blank">
+   Notes
+</a>
+
+<footer>
+  © 2026 Saumil Pandya | DevOps Engineer Portfolio
+</footer>
+
+</body>
+</html>
